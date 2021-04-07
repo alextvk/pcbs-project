@@ -11,3 +11,5 @@ In the partial report condition, the task will be to report as many digits as po
 In the whole report condition, both digits and letters will need to be reported. 
 
 Reports will be asked to the participants immediately after each display: they will be typed by the participation without considering their order. 
+
+Test test
