@@ -10,4 +10,5 @@ There are 6 blocked experimental conditions at stake here: 2 (partial, whole) x 
 In the partial report condition, the task will be to report as many digits as possible while ignoring letters, or vice versa.
 In the whole report condition, both digits and letters will need to be reported. 
 
-Reports will be asked to the participants immediately after each display: they will be typed by the participation without considering their order. (NB: I am not sure I will be able to create the input windows for this part, so maybe I'll consider that participants write down on a piece of paper their answer and that my program will only display for the different duration conditions the stimuli?)
+Reports will be asked to the participants immediately after each display: they will be typed by the participation without considering their order. 
+(NB: I am not sure I will be able to create the input windows for this part, so maybe I'll consider that participants write down on a piece of paper their answer and that my program will only display for the different duration conditions the stimuli?)
