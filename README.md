@@ -4,7 +4,7 @@ The aim of this project was to replicate [J. Duncan (1983) experiment](https://l
 
 The experiment consists in a succession of trials in which a stimulus made of 6 randomized alphanumeric characters is displayed on the screen for a varying amount of time. The participant is asked to either enter only the letters he can remember (e.g. partial report), by typing one the keyboard, or to enter all of the characters (letters and numbers, whole report) he can remember. The responses entered are recorded. 
 
-Duncan's conclusion was that participants perform a perceptual selection based on alphanumeric class: depending on whether it is a letter or a digit that they have to report in the partial report condition, subjects focus on the same class of characters in the whole report condition as well.
+Duncan's conclusion was that participants perform a perceptual selection based on alphanumeric class: depending on whether it is a letter or a digit that they have to report in the partial report condition, subjects focus on the same class of characters in the whole report condition as well and decrease their global performance in the whole report condition.
 
 ### Table of Contents
 * [Experiment characteristics](https://github.com/alextvk/pcbs-project-perceptual-selection#experiment-characteristics)
@@ -29,9 +29,9 @@ The order of the characters in the reports is not considered.
 
 ### The display duration conditions
 3 different display duration conditions were used, following Duncan's own experiment. 
-* the first set of stimuli displayed lasts for 60msec 
-* the second one lasts for 90msec
-* the last one lasts for 120 msec
+* the first set of stimuli displayed lasts for 60msec; 
+* the second one lasts for 90msec;
+* the last one lasts for 120 msec;
 All displays are followed by a blanck screen for 500msec. 
 
 In total, there are 6 blocked experimental conditions at stake: 2 (partial, whole) x 3 (display duration). There will be 8 trials for each of these 6 blocked conditions.
@@ -52,8 +52,11 @@ Then, type:
 In order to analyze the results of your experiment, you can use the following script: [download this zip file](https://github.com/alextvk/pcbs-project-perceptual-selection/blob/main/result-analysis.py), extract it on your computer. Then, open a Terminal, change the directory to where the file was downloaded and type: 
 <python result-analysis.py>
 
-Analyzing the results I got from 3 participants (me included), I can conclude that
+Analyzing the results I got from 3 participants (me included), I can conclude that performance in the partial report task is much better than in the whole report task in the three display duration conditions. However, we can notice that participants improved their global number of correct responses in the whole report condition. 
+It would have been nice to add a comparative analysis on the performance of letters report and of digits report in the whole report task. Indeed, we can hypothesize that because we have "conditioned" participants to focus only on letters in the first part of the experiments, their performance at reporting digits in the second part may be altered by this initial 'digits ignorance priming'. 
 
+![Results analysis](https://github.com/alextvk/pcbs-project-perceptual-selection/blob/main/Results_analysis.png)
+[Plotting the results](http://127.0.0.1:51121)
 
 
 ## Previous coding experience
