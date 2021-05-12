@@ -9,9 +9,10 @@ datafiles = ["data/test.xpd"]
 
 for datafile in datafiles:
 	df = pd.read_csv(datafile, comment = "#")
-	hits = []
-	for index, r in df.iterrows():
-		hits.append(nb_correct_responses(r["Stim"], r["Response"]))
-	df["hits"] = hits
+	# hits = []
+	# for index, r in df.iterrows():
+	#	hits.append(nb_correct_responses(r["Stim"], r["Response"]))
+	# df["hits"] = hits
+	df["hits"] = df.apply(lambda row: nb_correct_responses(row["Stim"], row["Response"]), axis=1)
 
 	print(df["hits"].groupby([df["Report_Type"], df["Display_Duration"]]).mean())
