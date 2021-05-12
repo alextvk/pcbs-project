@@ -55,8 +55,8 @@ In order to analyze the results of your experiment, you can use the following sc
 Analyzing the results I got from 3 participants (me included), I can conclude that performance in the partial report task is much better than in the whole report task in the three display duration conditions. However, we can notice that participants improved their global number of correct responses in the whole report condition. 
 It would have been nice to add a comparative analysis on the performance of letters report and of digits report in the whole report task. Indeed, we can hypothesize that because we have "conditioned" participants to focus only on letters in the first part of the experiments, their performance at reporting digits in the second part may be altered by this initial 'digits ignorance priming'. 
 
-!(https://github.com/alextvk/pcbs-project-perceptual-selection/blob/main/Results_analysis.png)
-[Plotting the results](http://127.0.0.1:51121)
+![Results analysis](https://github.com/alextvk/pcbs-project-perceptual-selection/blob/main/Results_analysis.png)
+![Plotting the results](http://127.0.0.1:51121)
 
 
 ## Previous coding experience
