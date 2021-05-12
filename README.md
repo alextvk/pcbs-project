@@ -7,7 +7,10 @@ The experiment consists in a succession of trials in which a stimulus made of 6 
 Duncan's conclusion was that participants perform a perceptual selection based on alphanumeric class: depending on whether it is a letter or a digit that they have to report in the partial report condition, subjects focus on the same class of characters in the whole report condition as well.
 
 ### Table of Contents
-* [Experiment characteristics]
+* [Experiment characteristics](https://github.com/alextvk/pcbs-project-perceptual-selection#experiment-characteristics)
+	* [The stimuli](https://github.com/alextvk/pcbs-project-perceptual-selection#the-stimuli)
+	* [The report type](https://github.com/alextvk/pcbs-project-perceptual-selection#the-report-type)
+	* [The display duration conditions](https://github.com/alextvk/pcbs-project-perceptual-selection#the-display-duration-conditions)
 * [Running the experiment](https://github.com/alextvk/pcbs-project-perceptual-selection#running-the-experiment)
 * [Analyzing the results](https://github.com/alextvk/pcbs-project-perceptual-selection#analyzing-the-results)
 * [Previous coding experience](https://github.com/alextvk/pcbs-project-perceptual-selection#previous-coding-experience)
