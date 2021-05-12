@@ -50,7 +50,7 @@ exp = expyriment.design.Experiment(name="Perceptual selection")
 expyriment.control.initialize(exp)
 
 blankscreen = expyriment.stimuli.BlankScreen() 
-exp.data_variable_names = ["Report_Type", "Display_Duration", "Stim", "Response"]
+exp.data_variable_names = ["Report_Type","Display_Duration","Stim","Response"]
 
 # PROGRAM EXECUTION	
 expyriment.control.start(subject_id= 1, skip_ready_screen = True)
