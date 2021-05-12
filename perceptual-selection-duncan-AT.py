@@ -6,11 +6,10 @@ import random, expyriment
 # Experiment parameters
 letters="ABCDEFGHKLMNOPQRST"
 numbers="1234567890"
-ntrials_per_block = 2
+ntrials_per_block = 8
 DISPLAY_DURATIONS = [60, 90, 120]
 
-
-# Creating a get_response function in order to resolve the TextInput bug (thank you so much Cédric!!)
+# Experiment functions
 def get_response(keyboard, is_only_letters=True):
     keys_to_process = [expyriment.misc.constants.K_RETURN]
     keys_to_process += expyriment.misc.constants.K_ALL_LETTERS
@@ -18,7 +17,7 @@ def get_response(keyboard, is_only_letters=True):
         keys_to_process += expyriment.misc.constants.K_ALL_DIGITS
     text_instruction = ("Enter all the LETTERS you remember seeing.\n" if is_only_letters
                else "Enter all the characters - both LETTERS AND NUMBERS - you remember seeing.\n")
-    stimulus = expyriment.stimuli.TextBox(text_instruction, size = (400, 200), position = (0,0)) # parametre pos? 
+    stimulus = expyriment.stimuli.TextBox(text_instruction, size = (400, 200))
     stimulus.present()
     has_pressed_return = False
     response = ""
@@ -58,8 +57,9 @@ expyriment.control.start(subject_id= 1, skip_ready_screen = True)
 
 # Add general welcome message + instructions
 expyriment.stimuli.TextScreen("Instructions", """Welcome to this experiment. 
-We will briefly display a string of 6 alphanumeric characters.
-You will be asked to report some or all of them... """).present()
+You will be briefly flashed with a string of 6 alphanumeric characters.
+You will be asked to report some or all of the characters you see.
+Click on the SPACE bar when you are ready. Good luck!""").present()
 exp.keyboard.wait()
 
 blankscreen.present()
@@ -81,7 +81,3 @@ for task in ["Partial", "Whole"]:
 
 
 expyriment.control.end(goodbye_text="Thank you for your participation. Goodbye.", goodbye_delay = 1000)
-
-
-
-
